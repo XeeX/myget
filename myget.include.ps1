@@ -1344,7 +1344,7 @@ function MyGet-TestRunner-Nunit {
             if (-not ($targetFramework -ge $minTargetFramework)) {
                 return
             }
-            if($assemblyInfo.ProcessorArchitecture -eq "AnyCpu") {                
+            if($assemblyInfo.ProcessorArchitecture -eq "x86") {                
                 if($targetFramework -eq "20") {
                     $net20X86 += $fullPath
                 } elseif($targetFramework -eq "40") {
